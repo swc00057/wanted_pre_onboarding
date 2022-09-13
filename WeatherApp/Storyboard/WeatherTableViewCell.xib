@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherTableViewCell" rowHeight="144" id="KGk-i7-Jjw" customClass="WeatherTableViewCell" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="424" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testimage" translatesAutoresizingMaskIntoConstraints="NO" id="IwA-ve-PMP">
+                        <rect key="frame" x="10" y="10" width="124" height="124"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="IwA-ve-PMP" secondAttribute="height" multiplier="1:1" id="EaT-8u-dSx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPi-8L-pya">
+                        <rect key="frame" x="154" y="10" width="250" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unh-K4-v49">
+                        <rect key="frame" x="154" y="47.5" width="250" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L3-Jv-pKx">
+                        <rect key="frame" x="154" y="113" width="250" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IwA-ve-PMP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Eeg-Ox-ALf"/>
+                    <constraint firstItem="rPi-8L-pya" firstAttribute="leading" secondItem="IwA-ve-PMP" secondAttribute="trailing" constant="20" id="Prt-0v-peX"/>
+                    <constraint firstItem="IwA-ve-PMP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Uia-6i-nuU"/>
+                    <constraint firstItem="unh-K4-v49" firstAttribute="leading" secondItem="IwA-ve-PMP" secondAttribute="trailing" constant="20" id="fyh-Y9-9Z7"/>
+                    <constraint firstAttribute="trailing" secondItem="unh-K4-v49" secondAttribute="trailing" constant="20" id="g7N-62-hmu"/>
+                    <constraint firstAttribute="trailing" secondItem="rPi-8L-pya" secondAttribute="trailing" constant="20" id="gNI-rw-8lC"/>
+                    <constraint firstAttribute="bottom" secondItem="IwA-ve-PMP" secondAttribute="bottom" constant="10" id="haR-ub-hfO"/>
+                    <constraint firstItem="0L3-Jv-pKx" firstAttribute="leading" secondItem="IwA-ve-PMP" secondAttribute="trailing" constant="20" id="p6s-56-QZ6"/>
+                    <constraint firstAttribute="trailing" secondItem="0L3-Jv-pKx" secondAttribute="trailing" constant="20" id="riA-yz-oPu"/>
+                    <constraint firstItem="unh-K4-v49" firstAttribute="top" secondItem="rPi-8L-pya" secondAttribute="bottom" constant="10" id="sAe-2L-vbf"/>
+                    <constraint firstItem="rPi-8L-pya" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="v4Q-cy-YLR"/>
+                    <constraint firstAttribute="bottom" secondItem="0L3-Jv-pKx" secondAttribute="bottom" constant="10" id="zQy-S4-Vjh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cityName" destination="rPi-8L-pya" id="yBG-9C-Bvc"/>
+                <outlet property="humidity" destination="0L3-Jv-pKx" id="o1B-Ye-w3r"/>
+                <outlet property="icon" destination="IwA-ve-PMP" id="Xdu-wv-Psv"/>
+                <outlet property="temp" destination="unh-K4-v49" id="dAy-57-WK5"/>
+            </connections>
+            <point key="canvasLocation" x="207.24637681159422" y="159.375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="testimage" width="100" height="100"/>
+    </resources>
+</document>

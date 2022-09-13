@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BMHANNAProOTF.otf">
+            <string>BMHANNAProOTF</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LaunchViewController" id="Y6W-OH-hqX" customClass="LaunchViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sr2-k9-iLS">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="Q5r-9e-7W5">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="파란 날씨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1w2-A6-8h1">
+                                <rect key="frame" x="76.333333333333329" y="469.66666666666669" width="237.33333333333337" height="73.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1w2-A6-8h1" secondAttribute="height" multiplier="55:17" id="m1V-iR-BYc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BMHANNAProOTF" family="BM HANNA Pro OTF" pointSize="64"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="es3-hW-47h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q5r-9e-7W5" firstAttribute="top" secondItem="Sr2-k9-iLS" secondAttribute="top" id="IAz-1x-a1N"/>
+                            <constraint firstItem="Q5r-9e-7W5" firstAttribute="leading" secondItem="Sr2-k9-iLS" secondAttribute="leading" id="fHm-mz-SPg"/>
+                            <constraint firstItem="1w2-A6-8h1" firstAttribute="centerY" secondItem="Q5r-9e-7W5" secondAttribute="centerY" multiplier="1.2" id="ibl-Zb-4wE"/>
+                            <constraint firstAttribute="bottom" secondItem="Q5r-9e-7W5" secondAttribute="bottom" id="nzt-My-byE"/>
+                            <constraint firstItem="Q5r-9e-7W5" firstAttribute="trailing" secondItem="es3-hW-47h" secondAttribute="trailing" id="p27-70-gd2"/>
+                            <constraint firstItem="1w2-A6-8h1" firstAttribute="centerX" secondItem="Q5r-9e-7W5" secondAttribute="centerX" id="xA5-RV-wlm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.76923076923077" y="116.58767772511848"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch" width="956" height="1561"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
